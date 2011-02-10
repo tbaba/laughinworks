@@ -1,4 +1,22 @@
+@import "colors";
+
 html, body, head, h1, h2, h3, h4, h5, h6,
 div, p, span, table, tbody, thead, tr, th, td,
 strong, nav, article, section {
+  border:0;
+  margin:0;
+  padding:0;
+  font: {
+    size:12px;
+    weight:normal;
+  }
+}
+
+#header {
+}
+
+#main {
+}
+
+#footer {
 }
