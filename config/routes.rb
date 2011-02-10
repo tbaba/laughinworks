@@ -1,4 +1,12 @@
 Laughinworks::Application.routes.draw do
+  get "top/index"
+
+  get "top/about"
+
+  get "top/work"
+
+  get "top/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
