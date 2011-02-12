@@ -1,6 +1,9 @@
 @import "colors";
+@import "effects";
 
-html, body, head, h1, h2, h3, h4, h5, h6,
+$content_width: 720px;
+
+html, body, head, h1, h2, h3, h4, h5, h6, a, img
 div, p, span, table, tbody, thead, tr, th, td,
 strong, nav, article, section {
   border:0;
@@ -9,14 +12,90 @@ strong, nav, article, section {
   font: {
     size:12px;
     weight:normal;
+    family: "Helvetica Neue", Verdana, sans-serif;
   }
+  color: $font_color;
+}
+
+body {
+  width: $content_width;
+  margin:0 auto;
 }
 
 #header {
+  @include radius(5px);
+  width:$content_width;
+  height:200px;
+  margin:1em 0;
+  h1 {
+    width:100%; 
+    padding:0 12px 0;
+    font: {
+      size: 4em;
+      weight: bold;
+    }
+  }
+  nav {
+    width:100%;
+    ul {
+      padding:0;
+      list-style:none;
+      li {
+        float:right;
+        @include text_to_button(100px);
+        padding:2px;
+        margin:0 5px;
+        &.first { margin-left:0; }
+        a {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 }
 
 #main {
+  position:static;
+  padding:1em;
+  h2 {
+  }
+  #contents {
+    clear:both;
+    #left_col{
+    }
+    #right_col{
+    }
+  }
 }
 
 #footer {
+  @include radius-top(5px);
+  position:fixed;
+  bottom:0;
+  width:$content_width;
+  height:200px;
+
+  ul {
+    li {
+      padding:2px;
+      margin: 1em 0;
+      list-style: none;
+    }
+  }
+
+  div {
+    padding:1em;
+    float:left;
+    &#left_col {
+      width: 30%;
+    }
+
+    &#center_col {
+      width: 30%;
+    }
+
+    &#right_col {
+      width: 30%;
+    }
+  }
 }

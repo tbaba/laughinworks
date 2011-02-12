@@ -8,4 +8,27 @@
 
   %body
 
-    = yield
+    #header
+      %h1= "laughinworks"
+      %nav
+        %ul
+          %li.first= link_to 'contact', '#'
+          %li= link_to 'works', '#'
+          %li= link_to 'intro', '#'
+
+    #main
+      #contents
+        = yield
+
+    #footer
+      #left_col
+        = raw "&copy; laughinworks.jp"
+      #center_col
+        %ul
+          %li= link_to 'intro', '#'
+          %li= link_to 'works', '#'
+          %li= link_to 'contact', '#'
+      #right_col
+        %dl
+          %dt member
+          %dd tatsuro baba
