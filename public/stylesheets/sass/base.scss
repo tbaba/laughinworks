@@ -45,8 +45,8 @@ body {
   }
   img {
     margin:0;
-    border-top:1px solid darken($ultra_light_gray, 40%);
-    border-bottom:1px solid darken($ultra_light_gray, 40%);
+    border-top:1px solid $dark_gray;
+    border-bottom:1px solid $dark_gray;
   }
   nav {
     width:100%;
@@ -71,7 +71,17 @@ body {
 #main {
   position:static;
   padding:1em;
-  h2 {
+  form {
+    input, textarea {
+      border:1px solid $dark_gray;
+      font: {
+        size:1em;
+        weight:normal;
+      }
+      &.submit {
+        @include form_button(100px, 5px);
+      }
+    }
   }
   #contents {
     clear:both;

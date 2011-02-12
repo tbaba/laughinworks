@@ -1,5 +1,5 @@
 @mixin text_to_button($width) {
-  border:1px solid darken($ultra_light_gray, 40%);
+  border:1px solid $dark_gray;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -25,15 +25,24 @@
   }
 }
 
+@mixin form_button($width, $radius) {
+  text-shadow: -1px -1px 2px #777777;
+  background: -moz-linear-gradient(top, $gray, $ultra_light_gray);
+  background: -webkit-gradient(linear, left top, left bottom, $gray, $ultra_light_gray);
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
 @mixin radius($width) {
-  border:1px solid darken($ultra_light_gray, 40%);
+  border:1px solid $dark_gray;
   border-radius: $width;
   -moz-border-radius: $width;
   -webkit-border-radius: $width;
 }
 
 @mixin radius-top($width) {
-  border:1px solid darken($ultra_light_gray, 40%);
+  border:1px solid $dark_gray;
   border-bottom:0;
   border-radius-top-left: $width;
   border-radius-top-right: $width;
@@ -46,13 +55,13 @@
 #header {
   color: #FFFFFF;
   text-shadow: -1px -1px 2px #777777;
-  background: -moz-linear-gradient(top, darken($ultra_light_gray, 20%), $ultra_light_gray);
-  background: -webkit-gradient(linear, left top, left bottom, darken($ultra_light_gray, 20%), $ultra_light_gray);
+  background: -moz-linear-gradient(top, $gray, $ultra_light_gray);
+  background: -webkit-gradient(linear, left top, left bottom, $gray, $ultra_light_gray);
 }
 
 #footer {
   color: #FFFFFF;
   text-shadow: -1px -1px 2px #777777;
-  background: -moz-linear-gradient(top, darken($ultra_light_gray, 20%), darken($ultra_light_gray, 60%));
-  background: -webkit-gradient(linear, left top, left bottom,darken($ultra_light_gray, 20%), darken($ultra_light_gray, 60%));
+  background: -moz-linear-gradient(top, $gray, $ultra_dark_gray);
+  background: -webkit-gradient(linear, left top, left bottom, $gray, $ultra_dark_gray);
 }

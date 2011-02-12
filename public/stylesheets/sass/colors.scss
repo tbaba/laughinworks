@@ -1,4 +1,8 @@
 $ultra_light_gray: #F0F0F0;
+$light_gray: darken($ultra_light_gray, 10%);
+$gray: darken($ultra_light_gray, 20%);
+$dark_gray: darken($ultra_light_gray, 40%);
+$ultra_dark_gray: darken($ultra_light_gray, 60%);
 $light_red: #F87A7A;
 $light_yellow: #F8EA7A;
 $light_sky_blue: #CEF1FF;
