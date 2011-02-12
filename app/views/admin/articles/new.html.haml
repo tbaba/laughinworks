@@ -1,0 +1,11 @@
+= form_for [:admin, @article] do |f|
+  %dl
+    %dt= f.label :title
+    %dd= f.text_field :title
+
+    %dt= f.label :body
+    %dd= f.text_area :body
+
+  %p.actions
+    = link_to "back", :back
+    = f.submit :class => "submit"
