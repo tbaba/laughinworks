@@ -25,7 +25,8 @@ body {
 #header {
   @include radius(5px);
   width:$content_width;
-  height:200px;
+//   height:325px;
+  height:145px;
   margin:1em 0;
   h1 {
     width:100%; 
@@ -35,9 +36,19 @@ body {
       weight: bold;
     }
   }
+  h2.description{
+    float:right;
+    margin:0 1em 1em 0;
+  }
+  img {
+    margin:0;
+    border-top:1px solid darken($ultra_light_gray, 40%);
+    border-bottom:1px solid darken($ultra_light_gray, 40%);
+  }
   nav {
     width:100%;
     ul {
+      clear:both;
       padding:0;
       list-style:none;
       li {
@@ -45,7 +56,6 @@ body {
         @include text_to_button(100px);
         padding:2px;
         margin:0 5px;
-        &.first { margin-left:0; }
         a {
           margin: 0 auto;
         }
@@ -74,7 +84,6 @@ body {
   bottom:0;
   width:$content_width;
   height:200px;
-
   ul {
     li {
       padding:2px;

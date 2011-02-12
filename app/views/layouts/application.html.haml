@@ -10,9 +10,16 @@
 
     #header
       %h1= "laughinworks"
+      %h2.description
+        = "site description here."
+        <br />
+        = "site description here."
+        <br />
+        = "site description here."
       %nav
         %ul
-          %li.first= link_to 'contact', '#'
+          %li= link_to 'contact', '#'
+          %li= link_to 'weblog', '#'
           %li= link_to 'works', '#'
           %li= link_to 'intro', '#'
 
@@ -27,6 +34,7 @@
         %ul
           %li= link_to 'intro', '#'
           %li= link_to 'works', '#'
+          %li= link_to 'weblog', '#'
           %li= link_to 'contact', '#'
       #right_col
         %dl
