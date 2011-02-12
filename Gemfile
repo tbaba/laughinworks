@@ -8,6 +8,7 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'rails3-generators'
 
+gem 'kaminari'
 gem 'paperclip'
 
 group :development, :test do
