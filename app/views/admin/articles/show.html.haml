@@ -2,5 +2,5 @@
 %p
   = simple_format @article.body
 %p
-  = @article.created_at.strftime('%Y/%m/%d - %H:%M:%S')
-  ~ @article.updated_at.strftime('%Y/%m/%d - %H:%M:%S')
+  = date_in_tokyo @article.created_at
+  ~ date_in_tokyo @article.updated_at

@@ -2,4 +2,4 @@
   .article
     %h2= article.title
     %p= simple_format article.body
-    %p.datetime= article.created_at.strftime('%Y/%m/%d - %H:%M:%S')
+    %p.datetime= date_in_tokyo article.created_at
