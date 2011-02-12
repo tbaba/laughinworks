@@ -9,13 +9,8 @@
   %body
 
     #header
-      %h1= "laughinworks"
-      %h2.description
-        = "site description here."
-        <br />
-        = "site description here."
-        <br />
-        = "site description here."
+      %h1= link_to "laughinworks", root_path
+      = image_tag 'top01.png'
       %nav
         %ul
           %li= link_to 'contact', '#'
