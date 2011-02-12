@@ -1,2 +1,5 @@
-%h1 Articles#index
-%p Find me in app/views/articles/index.html.haml
+- @articles.each do |article|
+  .article
+    %h2= article.title
+    %p= simple_format article.body
+    %p.datetime= article.created_at.strftime('%Y/%m/%d - %H:%M:%S')

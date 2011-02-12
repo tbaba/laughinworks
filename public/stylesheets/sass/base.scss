@@ -86,8 +86,31 @@ body {
   #contents {
     clear:both;
     #left_col{
+      width:65%;
+      .article {
+        @include radius(5px);
+        margin:1em 0;
+        padding:5px;
+        h2 {
+          font: {
+            size:2em;
+            weight:bold;
+          }
+          border-bottom:1px solid $dark_gray;
+        }
+        p {
+          margin:1em;
+          &.datetime{
+            text-align:right;
+            margin:5px 0;
+            padding:1em 5px 0;
+            border-top:1px solid $dark_gray;
+          }
+        }
+      }
     }
     #right_col{
+      width:30%;
     }
     .pagination {
       margin:0 auto 0 auto;
@@ -97,11 +120,10 @@ body {
 }
 
 #footer {
-  @include radius-top(5px);
-  position:fixed;
-  bottom:0;
+  @include radius(5px);
   width:$content_width;
   height:200px;
+  margin:1em 0;
   ul {
     li {
       padding:2px;
