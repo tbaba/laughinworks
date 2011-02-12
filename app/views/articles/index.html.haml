@@ -1,5 +1,7 @@
+%h2= "weblog"
+
 - @articles.each do |article|
   .article
-    %h2= article.title
+    %h3= article.title
     %p= simple_format article.body
     %p.datetime= date_in_tokyo article.created_at

@@ -22,6 +22,10 @@
       #contents
         #left_col
           = yield
+        #right_col
+
+        - if @articles
+          .pagination= paginate @articles
 
     #footer
       #left_col
