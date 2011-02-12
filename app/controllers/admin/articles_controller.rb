@@ -2,7 +2,7 @@ class Admin::ArticlesController < ApplicationController
   layout 'admin'
 
   def index
-    @articles = Article.all
+    @articles = Article.order(:created_at).page params[:page]
   end
 
   def show
