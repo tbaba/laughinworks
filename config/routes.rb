@@ -5,4 +5,8 @@ Laughinworks::Application.routes.draw do
   get "top/contact"
 
   resources :articles, :only => [:index, :show]
+
+  namespace :admin do
+    resources :articles
+  end
 end
