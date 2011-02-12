@@ -1,0 +1,13 @@
+- @articles.each do |article|
+  %dl
+    %dt= "title:"
+    %dd= article.title
+
+    %dt= "body:"
+    %dd= article.body
+
+    %dt= "created:"
+    %dd= article.created_at.strftime('%Y / %m / %d - %H:%M:%S')
+
+    %dt= "updated:"
+    %dd= article.updated_at.strftime('%Y / %m / %d - %H:%M:%S')
