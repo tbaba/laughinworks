@@ -110,11 +110,15 @@ body {
           }
         }
       }
+      .administrator {
+        float:right;
+      }
     }
     #right_col{
       width:30%;
     }
     .pagination {
+      clear:both;
       margin:0 auto 0 auto;
       text-align: center;
     }
