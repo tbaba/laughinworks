@@ -1,0 +1,58 @@
+@mixin text_to_button($width) {
+  border:1px solid darken($ultra_light_gray, 40%);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding:2px;
+  margin:0;
+  width:$width;
+  letter-spacing:2px;
+  text-shadow: -1px -1px 2px #777777;
+  color: #FFFFFF;
+  background: -moz-linear-gradient(top, #FDFBB8, #DAD424);
+  background: -webkit-gradient(linear, left top, left bottom, #FDFBB8, #DAD424);
+  a {
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    &:hover, &:visited, &:active {
+      color:#FFFFFF;
+    }
+  }
+  &:active {
+    background: -moz-linear-gradient(top, #FDFBB8, #CAC412);
+    background: -webkit-gradient(linear, left top, left bottom, #FDFBB8, #CAC412);
+  }
+}
+
+@mixin radius($width) {
+  border:1px solid darken($ultra_light_gray, 40%);
+  border-radius: $width;
+  -moz-border-radius: $width;
+  -webkit-border-radius: $width;
+}
+
+@mixin radius-top($width) {
+  border:1px solid darken($ultra_light_gray, 40%);
+  border-bottom:0;
+  border-radius-top-left: $width;
+  border-radius-top-right: $width;
+  -moz-border-radius-topleft: $width;
+  -moz-border-radius-topright: $width;
+  -webkit-border-top-left-radius: $width;
+  -webkit-border-top-right-radius: $width;
+}
+
+#header {
+  color: #FFFFFF;
+  text-shadow: -1px -1px 2px #777777;
+  background: -moz-linear-gradient(top, darken($ultra_light_gray, 20%), $ultra_light_gray);
+  background: -webkit-gradient(linear, left top, left bottom, darken($ultra_light_gray, 20%), $ultra_light_gray);
+}
+
+#footer {
+  color: #FFFFFF;
+  text-shadow: -1px -1px 2px #777777;
+  background: -moz-linear-gradient(top, darken($ultra_light_gray, 20%), darken($ultra_light_gray, 60%));
+  background: -webkit-gradient(linear, left top, left bottom,darken($ultra_light_gray, 20%), darken($ultra_light_gray, 60%));
+}
