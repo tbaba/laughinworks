@@ -17,7 +17,7 @@ class Admin::ArticlesController < ApplicationController
     @article = Article.new(params[:article])
 
     if @article.save!
-      redirect_to @article
+      redirect_to [:admin, @article]
     else
       render :new
     end
@@ -31,7 +31,7 @@ class Admin::ArticlesController < ApplicationController
     @article = Article.find(params[:id])
 
     if @article.update_attributes params[:article]
-      redirect_to @article
+      redirect_to [:admin, @article]
     else
       render :edit
     end
