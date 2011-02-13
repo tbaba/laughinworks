@@ -4,7 +4,11 @@ $gray: darken($ultra_light_gray, 20%);
 $dark_gray: darken($ultra_light_gray, 40%);
 $ultra_dark_gray: darken($ultra_light_gray, 60%);
 $light_red: #F87A7A;
-$light_yellow: #F8EA7A;
+$ultra_light_yellow: #F8EA7A;
+$light_yellow: darken($ultra_light_yellow, 10%);
+$yellow: darken($ultra_light_yellow, 20%);
+$dark_yellow: darken($ultra_light_yellow, 30%);
+$ultra_dark_yellow: darken($ultra_light_yellow, 40%);
 $light_sky_blue: #CEF1FF;
 
 $font_color: #333333;

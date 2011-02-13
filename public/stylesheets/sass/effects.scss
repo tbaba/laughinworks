@@ -54,14 +54,16 @@
 
 #header {
   color: #FFFFFF;
-  text-shadow: -1px -1px 2px #777777;
-  background: -moz-linear-gradient(top, $gray, $ultra_light_gray);
-  background: -webkit-gradient(linear, left top, left bottom, $gray, $ultra_light_gray);
+  a { color: #FFFFFF; }
+  text-shadow: -2px -2px 2px #777777;
+  background: -moz-linear-gradient(top, $dark_yellow, $ultra_light_yellow);
+  background: -webkit-gradient(linear, left top, left bottom, $dark_yellow, $ultra_light_yellow);
 }
 
 #footer {
   color: #FFFFFF;
+  a { color: #FFFFFF; }
   text-shadow: -1px -1px 2px #777777;
-  background: -moz-linear-gradient(top, $gray, $ultra_dark_gray);
-  background: -webkit-gradient(linear, left top, left bottom, $gray, $ultra_dark_gray);
+  background: -moz-linear-gradient(top, $light_yellow, $ultra_dark_yellow);
+  background: -webkit-gradient(linear, left top, left bottom, $light_yellow, $ultra_dark_yellow);
 }
