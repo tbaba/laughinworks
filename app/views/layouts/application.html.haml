@@ -13,10 +13,11 @@
       = image_tag 'top01.png'
       %nav
         %ul
-          %li= link_to 'contact', '#'
+          %li= link_to 'contact', contact_path
           %li= link_to 'weblog', articles_path
-          %li= link_to 'works', '#'
-          %li= link_to 'intro', '#'
+          %li= link_to 'works', work_path
+          %li= link_to 'about', about_path
+
 
     #main
       #contents
@@ -32,10 +33,10 @@
         = raw "&copy; laughinworks.jp"
       #center_col
         %ul
-          %li= link_to 'intro', '#'
-          %li= link_to 'works', '#'
+          %li= link_to 'about', about_path
+          %li= link_to 'works', work_path
           %li= link_to 'weblog', articles_path
-          %li= link_to 'contact', '#'
+          %li= link_to 'contact', contact_path
       #right_col
         %dl
           %dt member

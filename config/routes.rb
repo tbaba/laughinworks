@@ -1,8 +1,8 @@
 Laughinworks::Application.routes.draw do
   root :to => "top#index"
-  get "top/about"
-  get "top/work"
-  get "top/contact"
+  get "top/about", :as => "about"
+  get "top/work", :as => "work"
+  get "top/contact", :as => "contact"
 
   resources :articles, :only => [:index, :show]
 
